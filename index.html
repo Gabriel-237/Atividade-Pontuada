@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login com Google - Atividade</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Biblioteca oficial do Google Identity Services (GIS)[cite: 4] -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Atividade Login com Google</h1>
+    
+    <!-- Área exibida antes do login -->
+    <div id="login-box">
+      <p>Entre com sua conta Google de teste para validar a sessão no servidor.</p>
+      <div id="botao-google"></div>
+    </div>
+
+    <!-- Área exibida após o servidor validar o token -->
+    <div id="perfil-box" class="oculto">
+      <img id="user-foto" src="" alt="Foto de perfil">
+      <h2 id="user-nome"></h2>
+      <p id="user-email"></p>
+      <small id="user-sub"></small>
+      <button id="btn-logout">Sair da conta</button>
+    </div>
+
+    <p id="status-msg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
